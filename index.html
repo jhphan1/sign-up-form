@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pug Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="photo">
+        <div class="logo"><img src="img/paw.png" alt="Paw logo">PUGS</div>
+        <div class="credit">Photo by @charlesdeluvio on pexels.com</div>
+    </div>
+    <div class="main-content">
+        <div class="content1">
+            <div class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italic">now</span> to get started.</div><br>
+            <div class="text">You <span class="italic">know</span> you want to.</div>
+        </div>
+        <div class="content2">
+            <div class="text">Let's do this!</div>
+            <form id="form">
+                <div class="left-form">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" minlength="2" tabindex="1" placeholder=" " required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" tabindex="3" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="6" maxlength="30" tabindex="5" required>
+                </div>
+                <div class="right-form">
+                    <label for="lastname">last Name</label>
+                    <input type="text" id="lastname" name="lastname" minlength="2" tabindex="2" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" tabindex="4" required pattern=".?(\d{3}).?.?(\d{3}).?(\d{4})" title="ex: (123) 456-7890">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" name="confirm" tabindex="6" required>
+                </div>
+            </form>
+        </div>
+        <div class="content3">
+            <button form="form">Create Account</button>
+            <div class="text">Already have an account? <a href="file:///home/jhphan1/the_odin_project/sign-up-form/index.html">Log in</a></div>
+        </div>
+    </div>
+</body>
+</html>
