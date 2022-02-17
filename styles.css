@@ -398,7 +398,6 @@ body {
 
 .main-content {
     display: flex;
-    width: 65vw;
     height: 100vh;
     flex-direction: column;
     flex: 1;
@@ -473,6 +472,16 @@ input:focus {
     border: 1px solid lightseagreen;
     outline: none;
     box-shadow: 0px 0px 5px rgb(160, 160, 160);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+    outline: none;
+}
+
+.error {
+    font-size: 0.8rem;
+    color: red;
 }
 
 .content3 {
